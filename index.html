@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creative Responsive Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="logo">Creative</div>
+            <img src="./img/bg (1).jpg" class="bg">
+            <div class="content">
+                <h2>Let's Make <br>Something Creative</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci iste cupiditate, reiciendis voluptatem consequuntur fuga, ab dicta magni sequi voluptatum nobis ipsam. Cupiditate accusantium a ut animi aspernatur et reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita inventore, praesentium minima eaque ipsum cumque ullam,</p>
+                <a href="#">Get Started</a>
+            </div>
+            <p class="copyrightText">@2020. Offline Rajoni</p>
+        </section>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="socialBar">
+                <ul>
+                    <li><a href="#"><img src="./img/facebook (1).png"></a></li>
+                    <li><a href="#"><img src="./img/twitter (1).png"></a></li>
+                    <li><a href="#"><img src="./img/instagram (1).png"></a></li>
+                </ul>
+                <a href="mailto:r@email.com" class="emailBx"><img src="./img/email.png"></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.menuToggle');
+                var navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+
+        </script>
+    </body>
+</html>
